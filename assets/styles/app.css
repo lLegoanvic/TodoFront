@@ -1,0 +1,153 @@
+body {
+    background-color: lightgray;
+}
+.div-1 {
+    background-color: lightgrey;
+}
+
+.custom-image-size {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    visibility: visible;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+    color: black; /* Définir la couleur de l'icône sur noir */
+}
+
+.booster-icon {
+    width: 50px; /* Définissez la largeur souhaitée */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions de l'image */
+    margin-right: 0px; /* Ajoutez une marge à droite pour espacer les icônes */
+}
+
+.custom-card {
+    width: 100%; /* Prend toute la largeur du parent */
+    height: 200px; /* Hauteur fixe */
+}
+
+.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-card {
+    height: 300px; /* ou toute autre hauteur souhaitée */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+.empty-frame {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.lock-icon {
+    width: 50px; /* Définissez la largeur souhaitée */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions de l'image */
+    margin-right: 0px; /* Ajoutez une marge à droite pour espacer les icônes */
+}
+
+.lock-icon,
+.unlock-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lockIcon {
+    height: 40px;
+    width: 40px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.popup-content {
+    position: relative;
+    margin: 180px auto auto;
+    width: 50%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup-content img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.close-btn {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup {
+    background-color: rgba(200, 200, 200, 0.9); /* gris clair avec une opacité de 80% */
+    /* Autres styles CSS de votre popup */
+}
+
+.card-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+    height: 150px;
+    width: 150px;
+    /*width: fit-content; !* Ajustez la largeur du conteneur à son contenu *!*/
+}
+
+.card-container .frame, .card-container .gift {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container img {
+    width: 100%; /* Assurez-vous que l'image remplit entièrement le conteneur */
+}
+
+.card-container span {
+    position: absolute;
+    bottom: -40px;
+    left: 50%; /* Place le texte au centre horizontalement */
+    transform: translateX(-50%); /* Centre le texte horizontalement */
+    background-color: rgba(255, 255, 255, 0.7); /* Ajoute un fond blanc semi-transparent au texte */
+    padding: 5px;
+    border-radius: 5px; /* Ajoute des coins arrondis au fond */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.hidden {
+    display: none; /* Masque les éléments avec la classe hidden */
+}

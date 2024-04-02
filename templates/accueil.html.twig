@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+{% endblock %}
+{% block body %}
+
+<div class="container-lg">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col text-center" style="height: 80px;">
+                    <div class="col text-center">
+                        <h1>Créez vos propres tâches !</h1>
+                    </div>
+                </div>
+                <div class="card card-body mx-auto">
+                    <div class="row">
+                        <div class="col mx-auto">
+                            <img src="img/92ce602d1890d7bb052678cf67953157.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/b9694fbd7ac63211723ebeacff65c2e8.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/pokemon01.webp" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col text-center" style="height: 80px;">
+                    <div class="col text-center">
+                        <h2>Acceptez des quêtes et effectuez des tâches pour monter de niveau !</h2>
+                    </div>
+                </div>
+
+                <div class="card card-body mx-auto">
+                    <div class="row">
+                        <div class="col mx-auto">
+                            <img src="img/92ce602d1890d7bb052678cf67953157.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/b9694fbd7ac63211723ebeacff65c2e8.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/pokemon01.webp" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col text-center" style="height: 80px;">
+                    <div class="col text-center">
+                        <h4>Gagnez des boosters en montant de niveau, et collectionnez des cartes pokémon de
+                            différentes rareté !</h4>
+                    </div>
+                </div>
+                <div class="card card-body mx-auto">
+                    <div class="row">
+                        <div class="col mx-auto">
+                            <img src="img/92ce602d1890d7bb052678cf67953157.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/b9694fbd7ac63211723ebeacff65c2e8.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/pokemon01.webp" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col text-center" style="height: 80px;">
+                    <div class="col text-center">
+                        <h2>Fusionner vos cartes, ou sacrifiez les pour de nouvelles récompenses !</h2>
+                    </div>
+                </div>
+
+                <div class="card card-body mx-auto">
+                    <div class="row">
+                        <div class="col mx-auto">
+                            <img src="img/92ce602d1890d7bb052678cf67953157.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/b9694fbd7ac63211723ebeacff65c2e8.webp" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col mx-auto">
+                            <img src="img/pokemon01.webp" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+    {% endblock %}

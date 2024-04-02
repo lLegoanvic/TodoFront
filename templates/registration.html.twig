@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+{% endblock %}
+{% block body %}
+    {% for type, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {{ form_start(registrationForm) }}
+
+    <div class="mb-3 row">
+        <div class="col col-8 mx-auto">
+            <p class="card-text"> {{ form_row(registrationForm.email) }}</p>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col col-8 mx-auto">
+            <p class="card-text"> {{ form_row(registrationForm.password) }}</p>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col col-8 mx-auto">
+            <p class="card-text"> {{ form_row(registrationForm.username) }}</p>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col col-2 mx-auto">
+            {{ form_widget(registrationForm.agreeTerms, {'attr': {'class': 'form-check-input'}}) }}
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col-sm-8 offset-sm-2"> <!-- Utilisation de offset-sm-2 pour centrer horizontalement -->
+            <button type="submit" class="btn btn-primary">Register</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}
